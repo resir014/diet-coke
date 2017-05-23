@@ -1,0 +1,46 @@
+{
+  "name": "diet-coke",
+  "version": "0.1.0",
+  "description": "Simple, no-nonsense image minification command-line tool. Powered by imagemin.",
+  "main": "./build/index.js",
+  "scripts": {
+    "build": "rimraf ./build && tsc",
+    "commit": "git-cz",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tslint": "tslint --config tslint.json src/**/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/resir014/diet-coke.git"
+  },
+  "keywords": [
+    "imagemin",
+    "cli"
+  ],
+  "author": "Resi Respati <resir014@blvd.space>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/resir014/diet-coke/issues"
+  },
+  "homepage": "https://github.com/resir014/diet-coke#readme",
+  "devDependencies": {
+    "@types/commander": "^2.9.0",
+    "@types/node": "^7.0.22",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.2.0",
+    "rimraf": "^2.6.1",
+    "tslint": "^5.3.2",
+    "tslint-eslint-rules": "^4.1.0",
+    "typescript": "^2.3.3"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "imagemin": "^5.3.1",
+    "imagemin-jpegtran": "^5.0.2",
+    "imagemin-pngquant": "^5.0.0",
+    "ora": "^1.2.0",
+    "plur": "^2.1.2"
+  }
+}
