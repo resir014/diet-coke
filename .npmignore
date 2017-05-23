@@ -4,4 +4,3 @@ node_modules/
 *.tgz
 
 !build/
-!index.d.ts

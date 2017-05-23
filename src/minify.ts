@@ -14,6 +14,10 @@
  * limitations under the License.
  */
 
+// The reason why `noImplicitAny` is disabled is because most of the modules included here don't
+// even have any form of type declarations with them. And TypeScript keeps giving me a multitude
+// of those pesky implicit `any` errors no matter ow hard I try to add declaration files for them.
+
 import * as fs from 'fs'
 import * as ora from 'ora'
 import * as plur from 'plur'
