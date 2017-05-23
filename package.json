@@ -38,8 +38,10 @@
   "dependencies": {
     "commander": "^2.9.0",
     "imagemin": "^5.3.1",
+    "imagemin-gifsicle": "^5.1.0",
     "imagemin-jpegtran": "^5.0.2",
     "imagemin-pngquant": "^5.0.0",
+    "imagemin-svgo": "^5.2.1",
     "ora": "^1.2.0",
     "plur": "^2.1.2"
   }

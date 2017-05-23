@@ -24,6 +24,8 @@ import * as plur from 'plur'
 import * as imagemin from 'imagemin'
 import * as imageminPngquant from 'imagemin-pngquant'
 import * as imageminJpegtran from 'imagemin-jpegtran'
+import * imageminGifsicle from 'imagemin-gifsicle'
+import * imageminSvgo from 'imagemin-svgo'
 
 const convert = (args: string[], outPath: string) => {
   const spinner = ora('Compressing images').start();
@@ -31,7 +33,9 @@ const convert = (args: string[], outPath: string) => {
   imagemin(args, outPath, {
     plugins: [
       imageminPngquant(),
-      imageminJpegtran()
+      imageminJpegtran(),
+      imageminGifsicle(),
+      imageminSvgo()
     ]
   }).then((files: any[]) => {
     spinner.stop()
