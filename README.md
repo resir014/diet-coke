@@ -2,10 +2,17 @@
 
 > Simple, no-nonsense image minification command-line tool. Powered by [imagemin](https://github.com/imagemin/imagemin).
 
+## Install
+
+```
+$ git clone https://github.com/resir014/diet-coke.git
+$ yarn
+```
+
 ## Usage
 
 ```
-node ./build/index.js -h
+$ node ./build/index.js -h
 
   Usage: index [options] <file ...>
 
