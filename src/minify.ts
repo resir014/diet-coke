@@ -24,8 +24,8 @@ import * as plur from 'plur'
 import * as imagemin from 'imagemin'
 import * as imageminPngquant from 'imagemin-pngquant'
 import * as imageminJpegtran from 'imagemin-jpegtran'
-import * imageminGifsicle from 'imagemin-gifsicle'
-import * imageminSvgo from 'imagemin-svgo'
+import * as imageminGifsicle from 'imagemin-gifsicle'
+import * as imageminSvgo from 'imagemin-svgo'
 
 const convert = (args: string[], outPath: string) => {
   const spinner = ora('Compressing images').start();
