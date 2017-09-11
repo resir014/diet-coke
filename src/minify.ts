@@ -23,7 +23,7 @@ import * as ora from 'ora'
 import * as plur from 'plur'
 import * as imagemin from 'imagemin'
 import * as imageminPngquant from 'imagemin-pngquant'
-import * as imageminJpegtran from 'imagemin-jpegtran'
+import * as imageminMozjpeg from 'imagemin-mozjpeg'
 import * as imageminGifsicle from 'imagemin-gifsicle'
 import * as imageminSvgo from 'imagemin-svgo'
 
@@ -33,7 +33,7 @@ const convert = (args: string[], outPath: string) => {
   imagemin(args, outPath, {
     plugins: [
       imageminPngquant(),
-      imageminJpegtran(),
+      imageminMozjpeg({ quality: 90, progressive: false }),
       imageminGifsicle(),
       imageminSvgo()
     ]
